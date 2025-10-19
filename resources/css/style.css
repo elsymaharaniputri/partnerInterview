@@ -1,0 +1,60 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Root color variables (from Tailwind config) */
+:root {
+  --purple-primary: #9D70F3;
+  --purple-dark: #5410D4;
+  --blue-primary: #78A0FF;
+  --pink-primary: #C339D9;
+  --text-dark: #151515;
+  --text-darker: #0A0A0A;
+
+  /* Gradients */
+  --gradient-button-1: linear-gradient(90deg, #78A0FF 0%, #5410D4 100%);
+  --gradient-button-2: linear-gradient(90deg, #C339D9 11.06%, #78A0FF 100%);
+  --gradient-main: linear-gradient(135deg, #ffffff 0%, #bbdef6 44%, #cdb7ea 88%) !important;
+
+}
+
+/* Global body style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--gradient-main);
+  margin: 0;
+  padding: 0;
+}
+
+/* Example utility classes */
+.text-purple-primary {
+  color: var(--purple-primary);
+}
+
+.text-purple-dark {
+  color: var(--purple-dark);
+}
+
+.bg-gradient-main {
+  background: var(--gradient-main);
+}
+
+.bg-gradient-button-1 {
+  background: var(--gradient-button-1);
+}
+
+.bg-gradient-button-2 {
+  background: var(--gradient-button-2);
+}
+
+/* Add shadow and radius like Tailwind */
+.rounded-25 {
+  border-radius: 25px;
+}
+
+.transition-transform {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
